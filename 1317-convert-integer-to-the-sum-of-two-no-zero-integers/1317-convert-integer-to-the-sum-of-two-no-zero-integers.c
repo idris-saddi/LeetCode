@@ -3,9 +3,6 @@ int isNoZero(int x){
     if(x<10&&x>0) return 1;
     return(isNoZero(x/10)&&(x%10!=0));
 }
-/**
- * Note: The returned array must be malloced, assume caller calls free().
- */
 int* getNoZeroIntegers(int n, int* returnSize){
     int *t=(int*)malloc(8);
     *returnSize=2;
